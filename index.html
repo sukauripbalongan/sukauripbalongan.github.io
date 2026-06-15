@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Resmi Desa Sukaurip Balongan</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+--primary:#0f766e;
+--secondary:#14b8a6;
+--dark:#0f172a;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f8fafc;
+margin:0;
+}
+
+.navbar{
+background:linear-gradient(90deg,var(--primary),var(--secondary));
+padding:4px 0;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+display:flex;
+align-items:center;
+text-decoration:none;
+}
+
+.navbar-brand img{
+height:60px;
+}
+
+.logo-text{
+margin-left:8px;
+line-height:1.1;
+}
+
+.desa-title{
+color:white;
+font-size:1.5rem;
+font-weight:700;
+}
+
+.desa-subtitle{
+color:#d1fae5;
+font-size:.8rem;
+}
+
+.navbar-nav .nav-link{
+color:white!important;
+font-weight:600;
+}
+
+.navbar-nav .nav-link.active{
+border-bottom:2px solid white;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("assets/balaidesa.jpeg");
+background-size:cover;
+background-position:center;
+height:520px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:700;
+}
+
+.section-title{
+color:var(--primary);
+font-weight:700;
+}
+
+.card-custom{
+border:none;
+border-radius:15px;
+transition:.3s;
+}
+
+.card-custom:hover{
+transform:translateY(-5px);
+}
+
+.stat-icon{
+font-size:35px;
+color:var(--primary);
+}
+
+.footer{
+background:var(--dark);
+color:white;
+padding:25px 0;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:991px){
+
+.hero{
+height:420px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.navbar-brand img{
+height:45px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container-fluid px-4">
+<a class="navbar-brand" href="index.html">
+<img src="assets/logo.png">
+<div class="logo-text">
+<div class="desa-title">Desa Sukaurip</div>
+<div class="desa-subtitle">
+Kecamatan Balongan • Kabupaten Indramayu
+</div>
+</div>
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="menu">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+<li class="nav-item"><a class="nav-link" href="data-desa.html">Data Desa</a></li>
+<li class="nav-item"><a class="nav-link" href="potensi.html">Potensi</a></li>
+<li class="nav-item"><a class="nav-link" href="statistik.html">Statistik</a></li>
+<li class="nav-item"><a class="nav-link" href="pelayanan-publik.html">Pelayanan</a></li>
+<li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO bagian foto -->
+<section class="hero">
+<div class="container">
+<h1>Website Resmi Desa Sukaurip</h1>
+<p class="lead mt-3">
+Pusat informasi resmi Pemerintah Desa Sukaurip yang menyajikan informasi desa, data dea, berita desa dan menu informasi desa.
+</p>
+
+<a href="#statistik" class="btn btn-success btn-lg mt-3">Lihat Data Desa</a>
+</div>
+</section>
+
+<!-- STATISTIK -->
+<section class="container py-5" id="statistik">
+<h2 class="section-title text-center mb-4">Informasi Desa</h2>
+<div class="row g-4">
+<div class="col-md-3">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-users stat-icon"></i>
+<h5 class="mt-3">Penduduk</h5><h2>5.440</h2>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-house stat-icon"></i>
+<h5 class="mt-3">KK</h5><h2>1.644</h2>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-store stat-icon"></i>
+<h5 class="mt-3">UMKM</h5><h2>belum</h2>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-school stat-icon"></i>
+<h5 class="mt-3">Fasilitas</h5><h2>blum</h2>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SAMBUTAN -->
+<section class="container pb-5">
+<div class="card shadow p-5">
+<h2 class="section-title text-center mb-4">Sambutan Kuwu Desa Sukaurip</h2>
+<p>
+Assalamu'alaikum Warahmatullahi Wabarakatuh.<br><br>
+Puji syukur ke hadirat Allah SWT atas segala rahmat dan karunia-Nya sehingga Website Resmi Desa Sukaurip dapat hadir sebagai sarana informasi dan komunikasi bagi masyarakat.
+Website ini merupakan wujud komitmen Pemerintah Desa Sukaurip dalam meningkatkan keterbukaan informasi publik, kualitas pelayanan masyarakat, serta mendukung perkembangan teknologi informasi di tingkat desa.
+Kami berharap kehadiran website ini dapat mempererat hubungan antara pemerintah desa dan masyarakat serta menjadi media yang informatif, transparan, dan bermanfaat bagi seluruh lapisan masyarakat.
+</p>
+<div class="text-end mt-4">
+<strong>Casmuri</strong><br>Kuwu Desa Sukaurip</div>
+</div>
+</section>
+
+<!-- BERITA DESA -->
+<section class="container pb-5">
+<h2 class="section-title text-center mb-4">Berita Desa</h2>
+
+<div class="row g-4">
+
+<!-- Berita 1 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/baktisosial.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 10 Juni 2026
+</small>
+<h5 class="mt-2">
+Bakti Sosial Polres Indramayu dalam Rangka Hari Bhayangkara ke-78</h5>
+<p>
+Polres Indramayu menggelar bakti sosial dalam rangka Hari Bhayangkara ke-78 dengan menyalurkan bantuan kepada masyarakat Desa Sukaurip sebagai bentuk kepedulian sosial dan pengabdian Polri kepada masyarakat.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 2 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/dukcapil.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 05 Juni 2026
+</small>
+<h5 class="mt-2">
+Pelayanan Administrasi Kependudukan di Desa Sukaurip
+</h5>
+<p>
+Pemerintah Desa Sukaurip bersama Disdukcapil Kabupaten Indramayu melaksanakan kegiatan pelayanan administrasi kependudukan bagi masyarakat. Kegiatan ini merupakan upaya untuk mendekatkan dan mempermudah akses pelayanan kependudukan kepada warga desa.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 3 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/pelatihantataboga.jpeg" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 01 Juni 2026
+</small>
+<h5 class="mt-2">
+Pelatihan Tata Boga Bagi Perempuan Kepala Keluarga
+</h5>
+<p>
+Dalam rangka pemberdayaan perempuan, Pemerintah Desa Sukaurip menyelenggarakan Pelatihan Tata Boga bagi Perempuan Kepala Keluarga (PEKKA). Melalui kegiatan ini, peserta mendapatkan pengetahuan dan keterampilan dalam pengolahan makanan yang dapat dikembangkan menjadi usaha produktif guna meningkatkan kesejahteraan keluarga.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 4 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/resikobencana.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 05 Juni 2026
+</small>
+<h5 class="mt-2">
+Pelatihan Pengembangan Forum Pengurangan Risiko Bencana (F-PRB) Desa Sukaurip
+</h5>
+<p>
+Pemerintah Desa Sukaurip bersama mitra terkait mengadakan Pelatihan Pengembangan Forum Pengurangan Risiko Bencana (F-PRB) guna meningkatkan kesiapsiagaan masyarakat dalam menghadapi berbagai potensi bencana di lingkungan desa.
+</div>
+</div>
+</div>
+
+
+<!-- Berita 5 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/mapagsri140522.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 14 Mei 2022
+</small>
+<h5 class="mt-2">
+Masyarakat Desa Sukaurip Gelar Tradisi Mapag Sri Sebagai Wujud Syukur atas Hasil Pertanian
+</h5>
+<p>
+Masyarakat Desa Sukaurip melaksanakan tradisi Mapag Sri sebagai bentuk rasa syukur kepada Tuhan Yang Maha Esa atas keberkahan hasil pertanian serta harapan untuk panen yang melimpah di masa mendatang.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 5 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/wisudasekopercinta201223.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 20 Desember 2023
+</small>
+<h5 class="mt-2">
+Wisuda Peserta Sekoper Cinta Desa Sukaurip
+</h5>
+<p>
+Peserta Sekolah Perempuan Capai Impian dan Cita-cita (Sekoper Cinta) Desa Sukaurip mengikuti kegiatan wisuda sebagai bentuk apresiasi atas keberhasilan menyelesaikan program pemberdayaan perempuan.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 6 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/lokakarya.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 20 Desember 2023
+</small>
+<h5 class="mt-2">
+Lokakarya Dokumen dan Pengukuhan Forum Pengurangan Risiko Bencana Desa Sukaurip
+</h5>
+<p>
+Pemerintah Desa Sukaurip melaksanakan Lokakarya Dokumen dan Pengukuhan Forum Pengurangan Risiko Bencana (F-PRB) sebagai upaya memperkuat kesiapsiagaan masyarakat dalam menghadapi berbagai potensi bencana.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 7 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/posyandustikes.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 14 Januari 2025
+</small>
+<h5 class="mt-2">
+Posyandu dan Pemeriksaan Kesehatan Anak Bersama STIKes di Desa Sukaurip
+</h5>
+<p>
+Kegiatan Posyandu bersama STIKes dilaksanakan untuk memantau pertumbuhan dan perkembangan balita serta meningkatkan kesadaran masyarakat akan pentingnya kesehatan anak sejak dini.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 8 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/seminarkewirausahaankampusputih.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 14 Januari 2025
+</small>
+<h5 class="mt-2">
+Seminar Kewirausahaan Dorong UMKM Desa Sukaurip Lebih Inovatif dan Go Digital
+</h5>
+<p>
+Pemerintah Desa Sukaurip bersama Institut Padhaku Indramayu menggelar Seminar Kewirausahaan untuk meningkatkan wawasan masyarakat dalam mengembangkan usaha melalui inovasi dan pemanfaatan teknologi digital.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Berita 9 -->
+<div class="col-md-4">
+<div class="card card-custom shadow h-100">
+<img src="assets/unjunganbuyutbabakan181025.png" class="card-img-top" alt="Berita Desa">
+<div class="card-body">
+<small class="text-muted">
+<i class="fa-solid fa-calendar-days"></i> 18 Oktober 2025
+</small>
+<h5 class="mt-2">
+Masyarakat Desa Sukaurip Meriahkan Kunjungan Buyut Babakan
+</h5>
+<p>
+Masyarakat Desa Sukaurip turut memeriahkan kegiatan Kunjungan Buyut Babakan sebagai bentuk pelestarian tradisi dan penghormatan terhadap nilai-nilai budaya yang diwariskan oleh para leluhur.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+<a href="berita-detail.html" class="btn btn-success btn-lg">
+<i class="fa-solid fa-newspaper"></i>
+Lihat Berita Desa Selengkapnya
+</a>
+</div>
+
+</section>
+
+<!-- MENU INFORMASI -->
+<section class="container pb-5">
+
+<!-- MENU INFORMASI -->
+<section class="container pb-5">
+<h2 class="section-title text-center mb-4">Menu Informasi Desa</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<a href="profil.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-building-columns fa-3x text-success"></i>
+<h4 class="mt-3">Profil Desa</h4>
+<p>Sejarah, visi misi, riwayat kuwu dan struktur organisasi desa.</p>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="data-desa.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-database fa-3x text-success"></i>
+<h4 class="mt-3">Data Desa</h4>
+<p>Data kependudukan dan kondisi masyarakat desa.</p>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="potensi.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-seedling fa-3x text-success"></i>
+<h4 class="mt-3">Potensi Desa</h4>
+<p>Potensi UMKM, pertanian dan perikanan desa.</p>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="statistik.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-chart-column fa-3x text-success"></i>
+<h4 class="mt-3">Statistik Desa</h4>
+<p>Data statistik penduduk dan kondisi sosial masyarakat.</p>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="pelayanan-publik.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-file-signature fa-3x text-success"></i>
+<h4 class="mt-3">Pelayanan Publik</h4>
+<p>Pelayanan administrasi dan surat menyurat desa.</p>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="kontak.html" class="text-decoration-none text-dark">
+<div class="card card-custom shadow p-4 text-center">
+<i class="fa-solid fa-phone fa-3x text-success"></i>
+<h4 class="mt-3">Kontak Desa</h4>
+<p>Informasi kontak dan lokasi kantor desa.</p>
+</div>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+<p class="mb-0">
+Pemerintah Desa Sukaurip - Kecamatan Balongan • Kabupaten Indramayu
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
