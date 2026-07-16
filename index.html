@@ -31,6 +31,24 @@ min-height:70px;
 display:flex;
 align-items:center;
 text-decoration:none;
+flex:1;
+margin:0;
+}
+
+    .navbar .container-fluid{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.navbar-toggler{
+margin-left:auto;
+border:none;
+box-shadow:none;
+}
+
+.navbar-toggler:focus{
+box-shadow:none;
 }
 
 .navbar-brand img{
@@ -131,17 +149,6 @@ height:45px;
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 <div class="container-fluid px-4">
-<button class="navbar-toggler me-2"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu"
-aria-controls="menu"
-aria-expanded="false">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
 <a class="navbar-brand" href="index.html">
 
 <img src="assets/logo.png">
@@ -154,6 +161,17 @@ Kecamatan Balongan • Kabupaten Indramayu
 </div>
 
 </a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu"
+aria-controls="menu"
+aria-expanded="false">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
 
 <div class="collapse navbar-collapse justify-content-end" id="menu">
 <ul class="navbar-nav">
