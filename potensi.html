@@ -45,60 +45,69 @@ NAVBAR
 ========================== */
 
 .navbar{
-
 background:linear-gradient(90deg,var(--primary),var(--secondary));
-padding:5px 0;
-box-shadow:0 3px 12px rgba(0,0,0,.15);
-
+padding:0;
+min-height:70px;
 }
 
 .navbar-brand{
+    display:flex;
+    align-items:center;
+    flex:1;
+    min-width:0;
+}
 
-display:flex;
-align-items:center;
-text-decoration:none;
+   .navbar .container-fluid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
 
+.navbar-toggler{
+margin-left:auto;
+border:none;
+box-shadow:none;
+}
+
+.navbar-toggler:focus{
+box-shadow:none;
 }
 
 .navbar-brand img{
-
 height:60px;
-
+}
+    .navbar .container-fluid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-left:8px !important;
+    padding-right:8px !important;
 }
 
 .logo-text{
-
-margin-left:8px;
-
+margin-left:3px;
+line-height:1.1;
 }
 
 .desa-title{
-
-font-size:1.45rem;
+color:white;
+font-size:1.5rem;
 font-weight:700;
-color:#fff;
-
 }
 
 .desa-subtitle{
-
-font-size:.82rem;
-color:#e5fffb;
-
+color:#d1fae5;
+font-size:.8rem;
 }
 
-.nav-link{
-
-color:#fff!important;
+.navbar-nav .nav-link{
+color:white!important;
 font-weight:600;
-margin-left:10px;
-
 }
 
-.nav-link.active{
-
-border-bottom:2px solid #fff;
-
+.navbar-nav .nav-link.active{
+border-bottom:2px solid white;
 }
 
 /* ==========================
