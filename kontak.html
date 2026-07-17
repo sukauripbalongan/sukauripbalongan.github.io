@@ -82,12 +82,22 @@ font-size:.8rem;
 }
 
 .navbar-nav .nav-link{
-color:white!important;
-font-weight:600;
+    color:white !important;
+    font-weight:600;
+    padding:10px 15px;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#d1fae5 !important;
 }
 
 .navbar-nav .nav-link.active{
-border-bottom:2px solid white;
+    background:rgba(255,255,255,.18);
+    border-left:4px solid #fff;
+    color:#fff !important;
+    border-radius:0;
+    padding-left:16px;
 }
 
 /* HERO */
@@ -187,6 +197,18 @@ border-bottom:2px solid white;
         font-size:2rem;
     }
 
+    .navbar-nav{
+    padding:0;
+}
+
+.navbar-nav .nav-link{
+    padding:12px 18px;
+}
+
+.navbar-nav .nav-link.active{
+    margin-left:20px;
+    width:calc(100% - 20px);
+}
 }
 
 </style>
@@ -253,7 +275,7 @@ border-bottom:2px solid white;
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="kontak.html">Kontak</a>
+                <a class="nav-link active" href="kontak.html">Kontak</a>
             </li>
 
         </ul>
