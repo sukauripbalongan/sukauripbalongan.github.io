@@ -82,12 +82,20 @@ font-size:.8rem;
 }
 
 .navbar-nav .nav-link{
-color:white!important;
-font-weight:600;
+    color:white !important;
+    font-weight:600;
+    padding:10px 15px;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#d1fae5 !important;
 }
 
 .navbar-nav .nav-link.active{
-border-bottom:2px solid white;
+    background:rgba(255,255,255,.18);
+    border-radius:8px;
+    color:#fff !important;
 }
 
 .hero{
@@ -136,24 +144,6 @@ color:var(--primary);
     text-align:center;
     margin-top:50px;
 }
-@media (max-width:991px){
-
-    .navbar-expand-lg .container-fluid{
-        flex-wrap:nowrap !important;
-    }
-
-    .navbar-toggler{
-        display:block;
-        margin-left:auto;
-        align-self:center;
-        order:2;
-    }
-
-    .navbar-brand{
-        order:1;
-    }
-
-}
 @media(max-width:991px){
 
 .hero{
@@ -167,6 +157,25 @@ font-size:2rem;
 .navbar-brand img{
 height:45px;
 }
+
+/* Geser menu ke kanan */
+.navbar-nav{
+    padding-left:30px;
+    padding-top:10px;
+}
+
+.navbar-nav .nav-item{
+    margin-bottom:8px;
+}
+
+/* Tanda halaman aktif di HP */
+.navbar-nav .nav-link.active{
+    border-left:4px solid #fff;
+    background:rgba(255,255,255,.15);
+    border-radius:0;
+    padding-left:12px;
+}
+
 }
 
 /* ===== HERO ===== */
