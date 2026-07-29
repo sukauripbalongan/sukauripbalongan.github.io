@@ -33,7 +33,6 @@ box-sizing:border-box;
 }
 
 body{
-
 font-family:'Segoe UI',sans-serif;
 background:var(--light);
 overflow-x:hidden;
@@ -77,7 +76,7 @@ box-shadow:none;
 .navbar-brand img{
 height:60px;
 }
-    .navbar .container-fluid{
+ .navbar .container-fluid{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -123,69 +122,52 @@ font-size:.8rem;
 /* ==========================
 HERO
 ========================== */
-
 .hero{
-
-height:520px;
-
-background:
-
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("assets/balaidesa.jpeg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-
-color:#fff;
-
+    height:520px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("assets/balaidesa.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
 }
 
 .hero h1{
-
 font-size:3.4rem;
 font-weight:800;
 
 }
 
 .hero p{
-
 font-size:1.15rem;
 max-width:780px;
 margin:auto;
-
 }
 
 /* ==========================
 SECTION
 ========================== */
-
 .section-title{
-
 text-align:center;
 font-weight:700;
 color:var(--primary);
 margin-bottom:45px;
-
 }
 
 /* ==========================
 CARD
 ========================== */
-
 .stat-card,
 .potensi-card{
-
 border:none;
 border-radius:22px;
 background:#fff;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.35s;
-
 }
 
 .stat-card:hover,
@@ -196,21 +178,17 @@ transform:translateY(-8px);
 }
 
 .stat-card{
-
 padding:28px;
 text-align:center;
 
 }
 
 .stat-card h2{
-
 color:var(--primary);
 font-weight:700;
-
 }
 
 .potensi-card{
-
 overflow:hidden;
 
 }
@@ -297,7 +275,6 @@ color:white;
 }
 
 /* ICON */
-
 .icon-box{
 
 width:80px;
@@ -315,14 +292,12 @@ justify-content:center;
 }
 
 .icon-box i{
-
 font-size:34px;
 color:var(--primary);
 
 }
 
 /* DETAIL */
-
 .detail-card{
 
 background:#fff;
@@ -334,7 +309,6 @@ margin-bottom:35px;
 }
 
 .detail-header{
-
 background:linear-gradient(90deg,var(--primary),var(--secondary));
 padding:18px;
 
@@ -343,7 +317,6 @@ color:white;
 }
 
 .detail-header h3{
-
 margin:0;
 font-weight:700;
 
@@ -381,33 +354,21 @@ border-radius:30px;
 }
 
 /* VISI */
-
 .visi-card{
-
 background:linear-gradient(135deg,var(--primary),var(--secondary));
-
 padding:45px;
-
 color:white;
-
 border-radius:25px;
 
 }
 
 /* FOOTER */
-
 .footer{
-
 background:var(--dark);
-
 padding:30px;
-
 color:white;
-
 text-align:center;
-
 margin-top:50px;
-
 }
 
 /* RESPONSIVE */
@@ -512,447 +473,280 @@ NAVBAR
 
 
 <!-- HERO -->
-
 <section class="hero">
-
 <div class="container">
-
 <h1>Potensi Desa Sukaurip</h1>
-
 <p>
-
 Potensi unggulan Desa Sukaurip dalam bidang pertanian,
 hortikultura, peternakan,
 perdagangan, budaya,
 serta sumber daya masyarakat.
-
 </p>
-
 </div>
-
 </section>
 
 <!-- STATISTIK -->
-
 <section class="container py-5">
-
 <h2 class="section-title">
-
 Statistik Potensi Desa
-
 </h2>
 
 <div class="row g-4">
-
 <div class="col-lg-3 col-md-6">
-
 <div class="stat-card">
-
 <i class="fas fa-seedling fa-3x text-success mb-3"></i>
-
 <h2>61 Ha</h2>
-
 <p class="mb-0">
 Luas Sawah
 </p>
-
 </div>
-
 </div>
-
+    
 <div class="col-lg-3 col-md-6">
-
 <div class="stat-card">
-
 <i class="fas fa-wheat-awn fa-3x text-warning mb-3"></i>
-
 <h2>84 Ton</h2>
-
 <p class="mb-0">
-
 Produksi Padi
-
 </p>
-
 </div>
-
 </div>
-
+    
 <div class="col-lg-3 col-md-6">
-
 <div class="stat-card">
-
 <i class="fas fa-user-group fa-3x text-primary mb-3"></i>
-
 <h2>258</h2>
-
 <p class="mb-0">
-
 Buruh Migran
-
 </p>
-
 </div>
-
 </div>
 
 <div class="col-lg-3 col-md-6">
-
 <div class="stat-card">
-
 <i class="fas fa-mosque fa-3x text-danger mb-3"></i>
-
 <h2>13</h2>
-
 <p class="mb-0">
-
 Masjid & Mushola
-
 </p>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
+
+
+    
 <!-- =====================================
 DETAIL POTENSI DESA
 ====================================== -->
-
 <section class="container py-5">
-
 <h2 class="section-title">
 Detail Potensi Desa
 </h2>
-
 <div class="row">
-
 <div class="col-lg-6 mb-4">
-
 <div class="detail-card">
-
 <div class="detail-header">
-
+    
 <h3>
 <i class="fas fa-cow me-2"></i>
 Data Peternakan
 </h3>
-
 </div>
-
 <div class="detail-body">
-
 <table class="table table-hover align-middle">
-
 <thead>
 
 <tr>
-
 <th>Komoditas</th>
-
 <th width="120">Produksi</th>
-
 </tr>
-
 </thead>
-
+    
 <tbody>
-
 <tr>
-
 <td>
-
 <div class="d-flex justify-content-between">
-
 <span>Ayam Kampung</span>
-
 <span class="badge bg-success">
 0,36 Ton
 </span>
-
 </div>
 
 <div class="progress mt-2">
-
 <div class="progress-bar bg-success"
 style="width:52%"></div>
-
 </div>
-
 </td>
-
 <td class="text-center">
 0,36
 </td>
-
 </tr>
 
 <tr>
-
 <td>
-
 <div class="d-flex justify-content-between">
-
 <span>Itik</span>
-
 <span class="badge bg-primary">
 0,28 Ton
 </span>
-
 </div>
 
 <div class="progress mt-2">
 
 <div class="progress-bar bg-primary"
 style="width:40%"></div>
-
 </div>
-
 </td>
-
 <td class="text-center">
 0,28
 </td>
-
 </tr>
 
 <tr>
-
 <td>
-
 <div class="d-flex justify-content-between">
-
 <span>Domba</span>
-
 <span class="badge bg-warning text-dark">
 0,70 Ton
 </span>
-
 </div>
 
 <div class="progress mt-2">
-
 <div class="progress-bar bg-warning"
 style="width:100%"></div>
-
 </div>
-
 </td>
 
 <td class="text-center">
 0,70
 </td>
-
 </tr>
 
 <tr>
-
 <td>
-
 <div class="d-flex justify-content-between">
-
 <span>Entog</span>
-
 <span class="badge bg-danger">
 0,27 Ton
 </span>
-
 </div>
 
 <div class="progress mt-2">
-
 <div class="progress-bar bg-danger"
 style="width:38%"></div>
-
 </div>
-
 </td>
-
 <td class="text-center">
 0,27
 </td>
-
 </tr>
-
 </tbody>
-
 </table>
-
 </div>
-
 </div>
-
 </div>
 
 <!-- SAYURAN -->
-
 <div class="col-lg-6 mb-4">
-
 <div class="detail-card">
-
 <div class="detail-header">
-
 <h3>
-
 <i class="fas fa-carrot me-2"></i>
-
 Produksi Sayuran
-
 </h3>
-
 </div>
 
 <div class="detail-body">
-
 <p>
-
 Ketimun
-
 <span class="float-end">
-
 10 Kuintal
-
 </span>
-
 </p>
 
 <div class="progress mb-4">
-
 <div class="progress-bar bg-success"
 style="width:100%">
-
 </div>
-
 </div>
-
 <p>
-
 Terong
-
 <span class="float-end">
-
 7 Kuintal
-
 </span>
-
 </p>
 
 <div class="progress mb-4">
-
 <div class="progress-bar bg-info"
 style="width:70%">
-
 </div>
-
 </div>
-
 <p>
-
 Kacang Panjang
-
 <span class="float-end">
-
 2 Kuintal
-
 </span>
-
 </p>
 
 <div class="progress mb-4">
-
 <div class="progress-bar bg-warning"
 style="width:20%">
-
 </div>
-
 </div>
-
 <p>
-
 Labu
-
 <span class="float-end">
-
 2 Kuintal
-
 </span>
-
 </p>
-
+    
 <div class="progress mb-4">
-
 <div class="progress-bar bg-danger"
 style="width:20%">
-
 </div>
-
 </div>
-
 <p>
-
 Oyong
-
 <span class="float-end">
-
 1 Kuintal
-
 </span>
-
 </p>
-
+    
 <div class="progress">
-
 <div class="progress-bar bg-secondary"
 style="width:10%">
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
+
+    
 <!-- =====================================
 PRODUKSI BUAH
 ====================================== -->
-
 <section class="container pb-5">
-
 <div class="detail-card">
-
 <div class="detail-header">
 
 <h3>
 <i class="fas fa-apple-whole me-2"></i>
 Produksi Buah Tahun 2026
 </h3>
-
 </div>
 
 <div class="detail-body">
-
 <div class="row g-4">
 
 <!-- Mangga -->
-
 <div class="col-lg-4">
-
 <div class="stat-card p-4 h-100">
-
 <div class="text-center">
-
 <i class="fas fa-apple-whole fa-4x text-danger mb-3"></i>
-
 <h4>Mangga</h4>
-
 <h2 class="text-danger">
 10,8
 </h2>
@@ -960,109 +754,68 @@ Produksi Buah Tahun 2026
 <p class="text-muted mb-3">
 Kuintal / Tahun
 </p>
-
 <div class="progress">
-
 <div class="progress-bar bg-danger"
 style="width:100%">
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
 
 <!-- Pisang -->
-
 <div class="col-lg-4">
-
 <div class="stat-card p-4 h-100">
-
 <div class="text-center">
-
 <i class="fas fa-leaf fa-4x text-warning mb-3"></i>
-
 <h4>Pisang</h4>
-
 <h2 class="text-warning">
 3
 </h2>
-
 <p class="text-muted mb-3">
 Kuintal / Tahun
 </p>
-
 <div class="progress">
-
 <div class="progress-bar bg-warning"
 style="width:30%">
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
 
 <!-- Komoditas Lain -->
-
 <div class="col-lg-4">
-
 <div class="stat-card p-4 h-100">
-
 <div class="text-center">
-
 <i class="fas fa-seedling fa-4x text-success mb-3"></i>
-
 <h4>Komoditas Lain</h4>
-
 <p class="text-muted">
-
 Jambu Biji<br>
 Semangka<br>
 Melon
-
 </p>
 
 <span class="badge bg-secondary">
-
 Belum Ada Produksi
-
 </span>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
 
 <!-- =====================================
 VISI POTENSI
 ====================================== -->
-
 <section class="container pb-5">
-
 <div class="visi-card text-center">
-
 <i class="fas fa-earth-asia fa-4x mb-4"></i>
 
 <h2 class="mb-4">
-
 Masa Depan Potensi Desa
-
 </h2>
 
 <p style="font-size:18px;max-width:900px;margin:auto">
@@ -1077,9 +830,7 @@ serta peningkatan kualitas
 sumber daya manusia.
 
 </p>
-
 </div>
-
 </section>
 
 <!-- =====================================
@@ -1096,7 +847,5 @@ FOOTER
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
